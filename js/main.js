@@ -65,6 +65,29 @@ if (window.location.pathname.includes("property.html")) {
     <p>Location: ${property.location}</p>
   `;
 }
+const popup = document.getElementById("popupForm");
+const btns = document.querySelectorAll(".popupBtn");
+const close = document.querySelector(".closeBtn");
+
+// Open popup
+btns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    popup.style.display = "flex";
+  });
+});
+
+// Close popup
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Close on outside click
+window.onclick = function(e) {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+}
+
 
 // Render on Home + Listings page
 renderProperties(properties);
