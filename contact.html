@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact UrbanSquare</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Urban Square Real Estate</title>
 
-  <!-- Replace this with your Freshsales Webform Script -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Freshsales Tracking Code -->
   <script
 src='//in.fw-cdn.com/32654092/1481647.js'
 chat='true'>
 </script>
 
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">UrbanSquare Realty</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="listings.html">Properties</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div class="contact-container">
+  <h2>Enquire About a Property</h2>
 
-<section class="contact">
-  <h1>Contact Us</h1>
+  <!-- Freshsales Embedded Webform -->
+  <iframe 
+    src="https://anushmita296-org.myfreshworks.com/crm/sales/web_forms/a3db7b74e08c2adce789f3c743d3c877ca282cd13448594d409539aba6f578b2/form.html">
+  </iframe>
 
-  <form id="fs_contact_form">
-    <input type="text" name="name" placeholder="Full Name" required />
-    <input type="email" name="email" placeholder="Email Address" required />
-    <input type="text" name="phone" placeholder="Phone Number" required />
-    <textarea name="message" placeholder="Message"></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2025 UrbanSquare Realty.</p>
-</footer>
+</div>
 
 </body>
 </html>
